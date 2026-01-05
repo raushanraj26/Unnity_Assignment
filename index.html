@@ -10,22 +10,22 @@
 </head>
 <body>
 
-  <!-- ================= NAVBAR ================= -->
+  <!-- -----------nav bar--------- -->
   <header class="navbar">
     <div class="logo">Kevin Café</div>
 
     <nav class="nav-links">
+      
       <a href="#">Home</a>
 
       <div class="dropdown">
-        <button class="dropbtn">Franchise ⌄</button>
+        <button class="dropbtn">Franchise</button>
         <div class="dropdown-content">
           <a href="#">Overview</a>
           <a href="#">Investment</a>
           <a href="#">Apply</a>
         </div>
       </div>
-
       <a href="#">Testimonials</a>
       <a href="#">FAQ</a>
     </nav>
@@ -36,7 +36,7 @@
     </div>
   </header>
 
-  <!-- ================= HERO SECTION ================= -->
+  <!-- ---------hero section--------- -->
   <section class="hero">
     <div class="hero-text">
       <h1>Start Your Own Kevin Missal’s Café</h1>
@@ -48,40 +48,93 @@
     </div>
 
     <div class="hero-image">
-      <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085" alt="Cafe">
+      <img src="cafeimg.jpg" alt="Cafe">
     </div>
   </section>
 
-  <!-- ================= TABS SECTION ================= -->
+  <!-- ----------tab section---- -->
   <section class="tabs-section">
-    <h2>Comprehensive Franchise Support</h2>
 
-    <div class="tabs">
-      <button class="tab active" data-tab="pre">Pre-Opening</button>
-      <button class="tab" data-tab="ongoing">Ongoing Support</button>
-      <button class="tab" data-tab="marketing">Marketing</button>
-    </div>
+  <h2>Comprehensive Franchise Support</h2>
 
+  
+  <div class="tabs">
+    <button class="tab active" data-tab="pre">Pre-Opening</button>
+    <button class="tab" data-tab="ongoing">Ongoing Support</button>
+    <button class="tab" data-tab="marketing">Marketing</button>
+  </div>
+
+  
+  <div class="cardui">
+
+    <!-- ----------preopening-- -->
     <div class="tab-content active" id="pre">
-      <div class="card">📋 Site Selection</div>
-      <div class="card">🛠 Setup Assistance</div>
-      <div class="card">🎓 Staff Training</div>
+      <div class="card">
+        <div class="icon">📍</div>
+        <h3>Site Selection</h3>
+        <p>We help you choose the best location for success.</p>
+      </div>
+
+      <div class="card">
+        <div class="icon">🛠</div>
+        <h3>Store Setup</h3>
+        <p>Complete assistance in café setup & interiors.</p>
+      </div>
+
+      <div class="card">
+        <div class="icon">🎓</div>
+        <h3>Training</h3>
+        <p>Staff & owner training before launch.</p>
+      </div>
     </div>
 
+  <!-- --------ongoing support------- -->
     <div class="tab-content" id="ongoing">
-      <div class="card">📦 Supply Chain</div>
-      <div class="card">📊 Sales Support</div>
-      <div class="card">📞 Help Desk</div>
+      <div class="card">
+        <div class="icon">📦</div>
+        <h3>Supply Chain</h3>
+        <p>Regular supply of raw materials.</p>
+      </div>
+
+      <div class="card">
+        <div class="icon">📊</div>
+        <h3>Sales Support</h3>
+        <p>Monthly sales analysis & guidance.</p>
+      </div>
+
+      <div class="card">
+        <div class="icon">☎</div>
+        <h3>Help Desk</h3>
+        <p>24×7 operational support.</p>
+      </div>
     </div>
 
+    <!-- -------marketing--------- -->
     <div class="tab-content" id="marketing">
-      <div class="card">📣 Digital Ads</div>
-      <div class="card">🎯 Promotions</div>
-      <div class="card">📸 Branding</div>
-    </div>
-  </section>
+      <div class="card">
+        <div class="icon">📢</div>
+        <h3>Digital Ads</h3>
+        <p>Online promotions & paid campaigns.</p>
+      </div>
 
-  <!-- ================= TESTIMONIAL SLIDER ================= -->
+      <div class="card">
+        <div class="icon">🎯</div>
+        <h3>Brand Promotions</h3>
+        <p>Seasonal offers & campaigns.</p>
+      </div>
+
+      <div class="card">
+        <div class="icon">📸</div>
+        <h3>Branding</h3>
+        <p>Posters, banners & creatives.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- -------testimonal----------- -->
   <section class="testimonial-section">
     <h2>What Our Partners Say</h2>
 
@@ -106,7 +159,7 @@
     </div>
   </section>
 
-  <!-- ================= FAQ ================= -->
+  <!-- ------------faq------------- -->
   <section class="faq-section">
     <h2>FAQs</h2>
 
@@ -126,22 +179,22 @@
     </div>
   </section>
 
-  <!-- ================= FORM ================= -->
+  <!-- -----------form------- -->
   <section class="form-section">
     <h2>Apply for Franchise</h2>
 
-    <form id="franchiseForm">
-      <input type="text" placeholder="Name" required />
-      <input type="email" placeholder="Email" required />
-      <input type="text" placeholder="Phone" required />
-      <input type="text" placeholder="City" />
-      <textarea placeholder="Message"></textarea>
+    <form name="submit-to-google-sheet">
+      <input type="text" name="Name" placeholder="Name" required />
+      <input type="email" name="Email" placeholder="Email" required />
+      <input type="text" name="Phone" placeholder="Phone" required />
+      <input type="text" name="City" placeholder="City" />
+      <textarea name="Message" placeholder="Message"></textarea>
       <button type="submit" class="btn-primary">Submit</button>
       <p id="success"></p>
     </form>
   </section>
 
-  <!-- ================= FOOTER ================= -->
+  <!-- -------------footer---------- -->
   <footer class="footer">
     <div>
       <h4>Quick Links</h4>
@@ -162,7 +215,19 @@
     </div>
   </footer>
 
-  <!-- JS File -->
+<!-- ----------js file------ -->
   <script src="script.js"></script>
+  <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzJRyhYSMuvztHGGAeRlwRgbAJWKq0HIOu8bycncIhrzIrH7Ks991y6Jg2UJj5RweF0/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+     document.getElementById("success").innerText = "Form Submitted Successfully!";
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
 </body>
 </html>
