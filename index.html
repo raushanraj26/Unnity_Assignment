@@ -12,7 +12,7 @@
 
   <!-- -----------nav bar--------- -->
   <header class="navbar">
-    <div class="logo">Kevin Café</div>
+    <div class="logo"><b>K</b>evin Cafe</div>
 
     <nav class="nav-links">
       
@@ -26,8 +26,8 @@
           <a href="#">Apply</a>
         </div>
       </div>
-      <a href="#">Testimonials</a>
-      <a href="#">FAQ</a>
+      <a href="#testimonals">Testimonials</a>
+      <a href="#faq">FAQ</a>
     </nav>
 
     <div class="nav-cta">
@@ -37,7 +37,7 @@
   </header>
 
   <!-- ---------hero section--------- -->
-  <section class="hero">
+  <section id="hero" class="hero">
     <div class="hero-text">
       <h1>Start Your Own Kevin Missal’s Café</h1>
       <p>Join one of India’s fastest growing café franchises with full support.</p>
@@ -135,23 +135,32 @@
 
 
   <!-- -------testimonal----------- -->
-  <section class="testimonial-section">
+  <section id="testimonals" class="testimonial-section">
     <h2>What Our Partners Say</h2>
 
     <div class="slider">
       <div class="slide active">
-        <p>⭐⭐⭐⭐⭐ Amazing support and fast ROI.</p>
+        <div class="cardreview">
+          <p>⭐⭐⭐⭐⭐</p>
+          <p>Amazing support and fast ROI.</p>
         <h4>Rahul – Delhi</h4>
+        </div>
       </div>
 
       <div class="slide">
-        <p>⭐⭐⭐⭐ Great brand and guidance.</p>
+        <div class="cardreview">
+          <p>⭐⭐⭐⭐</p>
+          <p> Great brand and guidance.</p>
         <h4>Anjali – Mumbai</h4>
+        </div>
       </div>
 
       <div class="slide">
-        <p>⭐⭐⭐⭐⭐ Perfect franchise system.</p>
+        <div class="cardreview">
+          <p>⭐⭐⭐⭐⭐</p>
+          <p> Perfect franchise system.</p>
         <h4>Vikram – Pune</h4>
+      </div>
       </div>
 
       <button class="prev">❮</button>
@@ -160,7 +169,7 @@
   </section>
 
   <!-- ------------faq------------- -->
-  <section class="faq-section">
+  <section id="faq" class="faq-section">
     <h2>FAQs</h2>
 
     <div class="faq">
@@ -180,7 +189,7 @@
   </section>
 
   <!-- -----------form------- -->
-  <section class="form-section">
+  <section id="contact" class="form-section">
     <h2>Apply for Franchise</h2>
 
     <form name="submit-to-google-sheet">
@@ -189,7 +198,7 @@
       <input type="text" name="Phone" placeholder="Phone" required />
       <input type="text" name="City" placeholder="City" />
       <textarea name="Message" placeholder="Message"></textarea>
-      <button type="submit" class="btn-primary">Submit</button>
+      <button type="submit" class="btn-primary2">Submit</button>
       <p id="success"></p>
     </form>
   </section>
