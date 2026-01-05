@@ -4,6 +4,17 @@
   box-sizing: border-box;
   font-family: Arial, sans-serif;
 }
+html {
+  scroll-behavior: smooth;
+}
+
+
+section {
+  scroll-margin-top: 80px; 
+}
+
+
+
 
 /* navbar */
 .logo{
@@ -206,22 +217,43 @@
   /* transition: 0.3s; */
   width: 50%;
 }
+
+
 /* faq */
+
 .faq-section h2{
   text-align: center;
   margin-top: 20px;
   /* margin-bottom: 20px; */
 }
 .faq {
-  text-align: center;
-  width: 60%;
+ 
+  background-color: rgb(255, 215, 255);
+  /* text-align: center; */
+  width: 50%;
+  height: auto;
   margin: 10px auto;
+  padding: 5px 25px;
+  cursor: pointer;
+}
+.question{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 25px;
+  
+}
+.answer {
+  /* display: none;
+  padding: 10px; */
+  color: #666;
+  max-height: 0;
+  overflow: hidden;
+}
+.answer.active{
+  max-height: fit-content;
 }
 
-.answer {
-  display: none;
-  padding: 10px;
-}
 
 /* form */
 .form-section h2{
